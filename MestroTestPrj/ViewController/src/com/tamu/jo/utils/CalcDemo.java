@@ -16,12 +16,4 @@ public class CalcDemo {
         return num1 + num2;
     }
 
-    /**
-     * @author Ashraf
-     * @date 25 Mar 2018
-     * @desc a function that subtract two integers.
-     */
-    public int sub(int num1, int num2) {
-        return num1 - num2;
-    }
 }
