@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Model"
+  Version="12.2.1.16.48"
+  SeparateXMLFiles="true"
+  PackageName="com.tamu.jo">
+    <DesignTime>
+        <Attr Name="_DTExpressionTypeChecking" Value="true"/>
+        <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
+        <Attr Name="_jprName" Value="../../../../Model.jpr"/>
+        <Attr Name="_NamedConnection" Value="EM_COMMON"/>
+        <Attr Name="_appModuleNames1" Value="com.tamu.jo.business.am.MaestroAM"/>
+    </DesignTime>
+    <Containee
+      Name="am"
+      PackageName="com.tamu.jo.business.am"
+      ObjectType="JboPackage">
+        <DesignTime>
+            <Attr Name="_AM" Value="true"/>
+        </DesignTime>
+    </Containee>
+    <Containee
+      Name="eo"
+      PackageName="com.tamu.jo.business.eo"
+      ObjectType="JboPackage">
+        <DesignTime>
+            <Attr Name="_EO" Value="true"/>
+        </DesignTime>
+    </Containee>
+    <Containee
+      Name="vo"
+      PackageName="com.tamu.jo.business.vo"
+      ObjectType="JboPackage">
+        <DesignTime>
+            <Attr Name="_VO" Value="true"/>
+        </DesignTime>
+    </Containee>
+    <Containee
+      Name="jo"
+      PackageName="com.tamu.jo"
+      ObjectType="JboPackage"/>
+</JboProject>

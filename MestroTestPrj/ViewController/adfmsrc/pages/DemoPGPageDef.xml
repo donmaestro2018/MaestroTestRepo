@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.16.48" id="DemoPGPageDef" Package="pages">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="CountryVO1" RangeSize="25" DataControl="MaestroAMDataControl" id="CountryVO1Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="CountryVO1Iterator" id="CountryCode">
+      <AttrNames>
+        <Item Value="CountryCode"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="CountryVO1Iterator" id="CountryName">
+      <AttrNames>
+        <Item Value="CountryName"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="CountryVO1Iterator" id="First" RequiresUpdateModel="true" Action="first"/>
+    <action IterBinding="CountryVO1Iterator" id="Previous" RequiresUpdateModel="true" Action="previous"/>
+    <action IterBinding="CountryVO1Iterator" id="Next" RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="CountryVO1Iterator" id="Last" RequiresUpdateModel="true" Action="last"/>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="com.tamu.jo.MeastroAM">
+    <AppModuleConfig name="MeastroAMLocal" jbo.project="com.tamu.jo.Model" ApplicationName="com.tamu.jo.MeastroAM" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/EM_COMMONDS"/>
+      <Security AppModuleJndiName="com.tamu.jo.MeastroAM"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="MeastroAMShared" jbo.project="com.tamu.jo.Model" ApplicationName="com.tamu.jo.MeastroAM" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/EM_COMMONDS"/>
+      <Security AppModuleJndiName="com.tamu.jo.MeastroAM"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

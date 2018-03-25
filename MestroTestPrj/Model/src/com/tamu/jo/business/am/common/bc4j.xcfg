@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="com.tamu.jo.business.am.MaestroAM">
+    <AppModuleConfig name="MaestroAMLocal" jbo.project="com.tamu.jo.Model" ApplicationName="com.tamu.jo.business.am.MaestroAM"
+                     DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/EM_COMMONDS"/>
+      <Security AppModuleJndiName="com.tamu.jo.business.am.MaestroAM"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="MaestroAMShared" jbo.project="com.tamu.jo.Model" ApplicationName="com.tamu.jo.business.am.MaestroAM"
+                     DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/EM_COMMONDS"/>
+      <Security AppModuleJndiName="com.tamu.jo.business.am.MaestroAM"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

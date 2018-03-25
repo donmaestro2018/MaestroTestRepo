@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="MyTF">
+    <default-activity>MaestroDemoPG</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="MaestroDemoPG">
+      <page>/pages/MaestroDemoPG.jsf</page>
+    </view>
+  </task-flow-definition>
+</adfc-config>
