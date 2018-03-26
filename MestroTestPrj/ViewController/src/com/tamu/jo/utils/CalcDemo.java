@@ -21,6 +21,7 @@ public class CalcDemo {
      * @author Ashraf
      * @date 25 Mar 2018
      * @desc a function that subtract two integers.
+     * @param int num1, int num2
      */
     public int sub(int num1, int num2) {
         return num1 - num2;
