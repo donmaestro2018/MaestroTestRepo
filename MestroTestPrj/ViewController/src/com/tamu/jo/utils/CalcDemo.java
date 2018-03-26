@@ -11,6 +11,7 @@ public class CalcDemo {
      * @author Abu Shaira
      * @date 25 Mar 2018
      * @desc a function that sums up two integers.
+     * @param int num1, int num2
      */
     public int sum(int num1, int num2) {
         return num1 + num2;
